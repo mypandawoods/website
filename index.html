@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Zero-Cost Static Webpage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 2.5rem; /* Increased padding */
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer, larger shadow */
+            text-align: center;
+            max-width: 90%; /* Responsive width */
+            width: 600px; /* Max width for larger screens */
+            border: 1px solid #e2e8f0; /* Subtle border */
+        }
+        h1 {
+            color: #2d3748; /* Darker text for heading */
+            font-size: 2.5rem; /* Larger heading */
+            margin-bottom: 1.5rem;
+            font-weight: 700; /* Bold heading */
+        }
+        p {
+            color: #4a5568; /* Slightly lighter text for paragraph */
+            font-size: 1.125rem; /* Slightly larger paragraph text */
+            line-height: 1.75;
+            margin-bottom: 2rem;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4299e1; /* Blue button */
+            color: white;
+            padding: 0.875rem 2rem; /* Generous padding */
+            border-radius: 0.75rem; /* Rounded button */
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(66, 153, 225, 0.3); /* Button shadow */
+        }
+        .button:hover {
+            background-color: #3182ce; /* Darker blue on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Awesome Website!</h1>
+        <p>This is a simple static webpage hosted for free using GitHub Pages and connected to your custom domain from Hostinger. You can easily customize this content.</p>
+        <a href="#" class="button">Learn More</a>
+    </div>
+</body>
+</html>
