@@ -1,65 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Zero-Cost Static Webpage</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8; /* Light blue-gray background */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background-color: #ffffff;
-            padding: 2.5rem; /* Increased padding */
-            border-radius: 1.5rem; /* More rounded corners */
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer, larger shadow */
-            text-align: center;
-            max-width: 90%; /* Responsive width */
-            width: 600px; /* Max width for larger screens */
-            border: 1px solid #e2e8f0; /* Subtle border */
-        }
-        h1 {
-            color: #2d3748; /* Darker text for heading */
-            font-size: 2.5rem; /* Larger heading */
-            margin-bottom: 1.5rem;
-            font-weight: 700; /* Bold heading */
-        }
-        p {
-            color: #4a5568; /* Slightly lighter text for paragraph */
-            font-size: 1.125rem; /* Slightly larger paragraph text */
-            line-height: 1.75;
-            margin-bottom: 2rem;
-        }
-        .button {
-            display: inline-block;
-            background-color: #4299e1; /* Blue button */
-            color: white;
-            padding: 0.875rem 2rem; /* Generous padding */
-            border-radius: 0.75rem; /* Rounded button */
-            text-decoration: none;
-            font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 10px rgba(66, 153, 225, 0.3); /* Button shadow */
-        }
-        .button:hover {
-            background-color: #3182ce; /* Darker blue on hover */
-            transform: translateY(-2px); /* Slight lift effect */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Panda Woods Private Ltd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #eaf1e0;
+      color: #333;
+    }
+    header {
+      background: url('https://via.placeholder.com/1600x600?text=Bamboo+Forest') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+    header p {
+      font-size: 1.5em;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+    .about img {
+      width: 100%; max-width: 400px;
+      border-radius: 12px;
+    }
+    .blog-posts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .post {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      flex: 1;
+      min-width: 280px;
+    }
+    .post h3 { margin-top: 0; }
+    .benefits ul {
+      list-style: none;
+      padding: 0;
+    }
+    .benefits li::before {
+      content: "\2713";
+      color: #4d8055;
+      margin-right: 8px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form button {
+      background-color: #4d8055;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #d7e6c6;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    nav {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Awesome Website!</h1>
-        <p>This is a simple static webpage hosted for free using GitHub Pages and connected to your custom domain from Hostinger. You can easily customize this content.</p>
-        <a href="#" class="button">Learn More</a>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#benefits">Why Bamboo</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div>
+      <h1>My Panda Woods Private Ltd</h1>
+      <p>Bringing Nature Back to Life</p>
     </div>
+  </header>
+
+  <section id="about" class="about">
+    <div>
+      <h2>About Us</h2>
+      <p>We are an idea-stage company passionate about bamboo farming, sustainable living, and empowering rural livelihoods. At My Panda Woods, we believe that nature and innovation can co-exist to build a greener tomorrow. Our mission is to promote bamboo as a versatile, eco-friendly resource for future generations.</p>
+    </div>
+    <img src="https://via.placeholder.com/400x300?text=Bamboo+Farm" alt="Bamboo Farm" />
+  </section>
+
+  <section id="blog">
+    <h2>Our Farm Blog</h2>
+    <div class="blog-posts">
+      <div class="post">
+        <h3>Planting the First Bamboo</h3>
+        <p><small>July 15, 2022</small></p>
+        <p>We began our journey with the planting of our first bamboo shoot. The soil was rich, the air was fresh, and the excitement was real...</p>
+        <button>Read More</button>
+      </div>
+      <div class="post">
+        <h3>Why Bamboo is the Future</h3>
+        <p><small>July 10, 2022</small></p>
+        <p>Bamboo grows fast, needs no fertilizers, and restores degraded lands. Here's why we believe it's the key to sustainable agriculture...</p>
+        <button>Read More</button>
+      </div>
+      <div class="post">
+        <h3>Meet Our Team</h3>
+        <p><small>July 5, 2022</small></p>
+        <p>We’re a small team with a big dream — meet the people working hands-on in our bamboo farm and community outreach programs...</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="benefits">
+    <h2>Why Bamboo?</h2>
+    <ul>
+      <li>Eco-friendly and fully biodegradable</li>
+      <li>Grows 10x faster than trees</li>
+      <li>Sequesters more CO₂ than traditional forestry</li>
+      <li>Restores degraded land and supports biodiversity</li>
+      <li>Supports rural employment and craft industries</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:info@mypandawoods.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2022 My Panda Woods Private Ltd &mdash; All rights reserved.</p>
+    <p><a href="#about">About</a> | <a href="#blog">Blog</a> | <a href="#contact">Contact</a></p>
+  </footer>
 </body>
 </html>
